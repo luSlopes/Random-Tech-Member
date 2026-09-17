@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+.layout {
+  display: grid;
+  grid-template-rows: 250px 40px 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.shadows {
+  box-shadow: 4px 6px 4px oklch(0.2801 0 9.37);
+}
+
+.logo {
+  animation: logoSpin 5s infinite linear;
+}
+
+@keyframes logoSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
