@@ -22,10 +22,10 @@ export function App() {
 
   return (
     <div className="bg-gray-200 w-screen h-screen layout">
-      <header className="flex flex-col items-center bg-blue-500 rounded-[30px] w-[40%] shadows">
+      <header className="flex flex-col items-center bg-blue-500 rounded-[30px] w-[40%] max-mobile:w-[90%] shadows">
         <h1 className="text-4xl my-3">Random picker</h1>
-        <h2 className="my-1 text-white text-lg">
-          Clica no botão e escolha um mebro aleatório de tecnologia
+        <h2 className="my-1 text-white text-lg max-mobile:text-center">
+          Clica no botão e escolha um membro aleatório de tecnologia
         </h2>
         <img
           src={FocusImg}
@@ -35,12 +35,13 @@ export function App() {
       </header>
       <button
         type="button"
-        className="bg-green-400 w-[200px] h-[40px] rounded-2xl hover:bg-green-500 cursor-pointer shadow-2xl"
+        className="bg-green-400 w-[200px] h-[40px] rounded-2xl hover:bg-green-500 
+        cursor-pointer shadow-2xl"
         onClick={() => chooseTechMember()}
       >
         Gerar
       </button>
-      <main className="flex gap-[100px] items-center">
+      <main className="flex gap-[100px] items-center max-mobile:flex-col max-mobile:gap-[20px] ">
         {techMember === null ? undefined : (
           <>
             <PictureCard

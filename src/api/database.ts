@@ -36,7 +36,7 @@ const Jonathan: TechMember = {
   imgUrl: JonathanPic,
 };
 const Eduardo: TechMember = {
-  name: "Eduardo",
+  name: "Eduardo Evangelista",
   onCompanySince: "25.1",
   role: "Product Owner",
   imgUrl: DuduPic,
